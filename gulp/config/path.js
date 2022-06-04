@@ -14,7 +14,7 @@ export const path = {
         html:`${buildFolder}/index.html`,
     },
 	src: {
-        html: `${srcFolder}/index.html`,
+        pug: `${srcFolder}/index.pug`,
         scss: `${srcFolder}/index.scss`,
     },
 	watch: {

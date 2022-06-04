@@ -7,10 +7,11 @@ global.app = {
 	gulp: gulp,
     plugins:plugins
 }
-
+import { clean } from './gulp/tasks/clean.js';
 import { pug } from './gulp/tasks/pug.js';
 const defaultGulpFunction =gulp.series(
-    
+    clean,
+    gulp.series(pug)
 )
 
 gulp.task('default',defaultGulpFunction)
