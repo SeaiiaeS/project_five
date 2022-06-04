@@ -13,10 +13,15 @@ import { pug } from './gulp/tasks/pug.js';
 import { scss } from './gulp/tasks/scss.js';
 import { server } from './gulp/tasks/server.js';
 
+const watch = () => {
+    gulp.watch(path.watch.pug, pug);
+    gulp.watch(path.watch.scss, scss);
+}
+
 const defaultGulpFunction =gulp.series(
     clean,
     gulp.series(pug,scss),
-    gulp.parallel(server)
+    gulp.parallel(server,watch)
 )
 
 gulp.task('default',defaultGulpFunction)
