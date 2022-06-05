@@ -18,7 +18,7 @@ export const path = {
         scss: `${srcFolder}/index.scss`,
     },
 	watch: {
-        html: `${srcFolder}/**/*.html`,
+        pug: `${srcFolder}/**/*.pug`,
         scss: `${srcFolder}/**/*.scss`,
     },
 	clean: buildFolder,
