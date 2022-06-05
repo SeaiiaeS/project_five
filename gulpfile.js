@@ -12,15 +12,17 @@ import { clean } from './gulp/tasks/clean.js';
 import { pug } from './gulp/tasks/pug.js';
 import { scss } from './gulp/tasks/scss.js';
 import { server } from './gulp/tasks/server.js';
+import { image } from './gulp/tasks/image.js';
 
 const watch = () => {
     gulp.watch(path.watch.pug, pug);
     gulp.watch(path.watch.scss, scss);
+    gulp.watch(path.watch.image, image);
 }
 
 const defaultGulpFunction =gulp.series(
     clean,
-    gulp.series(pug,scss),
+    gulp.series(pug,scss,image),
     gulp.parallel(server,watch)
 )
 

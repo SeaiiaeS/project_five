@@ -15,11 +15,12 @@ export const path = {
     },
 	src: {
         pug: `${srcFolder}/index.pug`,
-        scss: `${srcFolder}/index.scss`,
+        scss: `${srcFolder}/style.scss`,
     },
 	watch: {
         pug: `${srcFolder}/**/*.pug`,
         scss: `${srcFolder}/**/*.scss`,
+        image: `${imageFolder}`,
     },
 	clean: buildFolder,
 	buildFolder: buildFolder,
