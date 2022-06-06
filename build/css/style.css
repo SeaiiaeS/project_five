@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap");
 
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap");
 
@@ -102,6 +102,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     width: 50%;
+    z-index: 99;
   }
 }
 
@@ -164,13 +165,14 @@ body {
 .body {
   background: #ffffff;
   width: 100%;
+  height: 3000px;
   position: relative;
 }
 
 .execute {
   background: #ffffff;
   width: 100%;
-  padding: 50px 210px 170px 210px;
+  padding: 50px 200px 180px 200px;
   font-size: 18px;
 }
 
@@ -301,4 +303,206 @@ body {
   .execute a {
     font-size: 0.6em;
   }
+}
+
+.about {
+  background: #EAFBFF;
+  width: 100%;
+  position: relative;
+  padding: 230px 9.375% 209px 11.1111111111%;
+}
+
+@media only screen and (max-width: 1380px) {
+  .about {
+    padding: 230px 50px 209px 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about {
+    padding: 230px 10px 209px 10px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .about {
+    padding: 20px 5px 100px 5px;
+  }
+}
+
+.about .background_frame {
+  max-width: 1140px;
+  position: absolute;
+  margin: 0 auto;
+  top: 82px;
+  left: 0;
+  right: 95px;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 770px) {
+  .about .background_frame {
+    height: 350px;
+  }
+}
+
+.about_container {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px 17px 0 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about_container {
+    padding: 15px 0 0 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .about_container {
+    padding: 15px 0 0 5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about_image {
+    width: 300px;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .about_image {
+    width: 200px;
+  }
+}
+
+.about_box {
+  padding: 20px 0 0 0;
+}
+
+.about .about_subtitle {
+  font: 600 14px "Poppins";
+  margin: 0 0 15px 2px;
+  color: #00BFC4;
+}
+
+@media only screen and (max-width: 480px) {
+  .about .about_subtitle {
+    font-size: 12px;
+  }
+}
+
+.about .about_subtitle::after {
+  background: #00BFC4;
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+}
+
+.about .about_title {
+  font: 700 44px/60px "Josefin Sans";
+  margin: 0 0 24px 0;
+  letter-spacing: 0.01em;
+  color: #00788A;
+}
+
+@media only screen and (max-width: 770px) {
+  .about .about_title {
+    font-size: 32px;
+    line-height: 30px;
+  }
+}
+
+.about .about_description {
+  font: 400 22px/34px "Poppins";
+  color: #083038;
+}
+
+@media only screen and (max-width: 770px) {
+  .about .about_description {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.about_cart_box {
+  padding: 30px 245px 0 0;
+}
+
+@media only screen and (max-width: 770px) {
+  .about_cart_box {
+    padding: 30px 65px 0 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about_cart_box {
+    padding: 30px 20px 0 0;
+  }
+}
+
+.about_cart_box .experiance {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 24px 14px 28px 28px;
+  border-radius: 40px;
+  gap: 35px;
+}
+
+@media only screen and (max-width: 480px) {
+  .about_cart_box .experiance {
+    padding: 14px 4px 18px 18px;
+    gap: 20px;
+  }
+}
+
+.about_cart_box .support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 50px 14px 28px 28px;
+  border-radius: 40px;
+  gap: 27px;
+}
+
+@media only screen and (max-width: 480px) {
+  .about_cart_box .support {
+    padding: 14px 4px 18px 18px;
+    gap: 15px;
+  }
+}
+
+.about_cart_box h4 {
+  font: 600 20px "Poppins";
+  color: #00788A;
+}
+
+.about_cart_box p {
+  font: 500 12px "Poppins";
+  padding: 5px 0 0 0;
+  color: #083038;
 }

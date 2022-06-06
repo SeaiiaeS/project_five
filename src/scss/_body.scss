@@ -1,7 +1,9 @@
 .body{
     width: 100%;
+    height: 3000px;
     position: relative;
     background-color: #ffffff;
 }
 
-@import'./execute'
+@import'./execute';
+@import'./about'

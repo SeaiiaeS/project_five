@@ -1,0 +1,181 @@
+.about{
+    width: 100%;
+    background-color: #EAFBFF;
+    position: relative;
+    padding: 230px percentage(135px/1440px) 209px percentage(160px/1440px);
+    
+    @media only screen and (max-width: 1380px){
+        padding: 230px 50px 209px 50px;
+    }
+
+    @media only screen and (max-width: 1200px){
+        padding: 230px 10px 209px 10px;
+    }
+
+    @media only screen and (max-width: 770px){
+        padding: 20px 5px 100px 5px;
+    }
+
+    & .background_frame{
+        max-width: 1140px;
+        position: absolute;
+        margin: 0 auto;
+        top: 82px;
+        left: 0;
+        right: 95px;
+        bottom: 0;
+        z-index: 1;
+
+        @media only screen and (max-width: 770px){
+            height: 350px;
+        }
+    }
+
+    &_container{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 17px 0 0;
+
+        @media only screen and (max-width: 1200px){
+            padding:  15px 0 0 100px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media only screen and (max-width: 770px){
+            padding: 15px 0 0 5%;
+        }
+    }
+
+    &_image{
+        @media only screen and (max-width: 1200px){
+            width: 300px;
+            height: 100%;
+        }
+
+        @media only screen and (max-width: 770px){
+            width: 200px;
+        }
+    }
+    &_box{
+        padding: 20px 0 0 0;
+    }
+
+    & &_subtitle{
+        margin: 0 0 15px 2px;
+
+        @media only screen and (max-width: 480px){
+            font-size: 12px;
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 10%;
+            height: 2px;
+            background-color: #00BFC4;
+        }
+        @include fonts(
+                $size: 14px,
+                $weight: 600,
+                $family: 'Poppins',
+                $lineHeight: null,
+                $color: #00BFC4
+            );
+    }
+
+    & &_title{
+        margin: 0 0 24px 0;
+        letter-spacing: 0.01em;
+
+        @media only screen and (max-width: 770px){
+            font-size:32px;
+            line-height: 30px;
+        }
+
+        @include fonts(
+                $size: 44px,
+                $weight: 700,
+                $family: 'Josefin Sans',
+                $lineHeight: 60px,
+                $color: #00788A
+            );
+    }
+
+    & &_description{
+        @media only screen and (max-width: 770px){
+            font-size:18px ;
+            line-height: 25px;
+        }
+        @include fonts(
+                $size: 22px,
+                $weight: 400,
+                $family: 'Poppins',
+                $lineHeight: 34px,
+                $color: #083038
+            );
+    }
+  
+}
+
+.about_cart_box{
+    padding: 30px 245px 0 0;
+
+    @media only screen and (max-width: 770px){
+        padding: 30px 65px 0 0;
+    }
+
+    @media only screen and (max-width: 480px){
+        padding: 30px 20px 0 0;
+    }
+
+    .experiance{
+        display: flex;
+        justify-content: flex-start;
+        padding: 24px 14px 28px 28px;
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+        border-radius: 40px;
+        gap: 35px;
+
+        @media only screen and (max-width: 480px){
+            padding: 14px 4px 18px 18px;  
+            gap: 20px;  
+        }
+        
+    }
+
+    .support{
+        display: flex;
+        justify-content: flex-start;
+        padding: 50px 14px 28px 28px;
+        border-radius: 40px;
+        gap: 27px;
+
+        @media only screen and (max-width: 480px){
+            padding: 14px 4px 18px 18px;  
+            gap: 15px;  
+        }
+    }
+
+    h4{
+        @include fonts(
+                $size: 20px,
+                $weight: 600,
+                $family: 'Poppins',
+                $lineHeight: null,
+                $color: #00788A
+            );
+    }
+
+    p{
+        padding: 5px 0 0 0;
+        @include fonts(
+                $size: 12px,
+                $weight: 500,
+                $family: 'Poppins',
+                $lineHeight: null,
+                $color: #083038
+            );
+    }
+}
