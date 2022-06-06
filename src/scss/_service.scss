@@ -1,0 +1,154 @@
+.service{
+    width: 100%;
+    position: relative;
+    padding: 80px percentage(135/1440) 75px percentage(135/1440);
+
+    @media only screen and (max-width: 770px){
+        padding: 80px 10px 25px 10px;
+    }
+
+    &_back{
+        width: 1031px;
+        height: auto;
+        position: absolute;
+        top: 230px;
+        right: 120px;
+        z-index: 1;
+    }
+
+    &_subtitle{
+        text-align: center;
+
+        &:after{
+            content: '';
+            display: block;
+            width: 2em;
+            height: 1px;
+            background-color: #00BFC4;
+            margin: 1px auto;
+        }
+
+        @include fonts(
+                $size: 14px,
+                $weight: 600,
+                $family: 'Poppins',
+                $lineHeight: null,
+                $color: #00BFC4
+            );
+    }
+
+    &_title{
+        padding: 15px 0 0 0;
+        text-align: center;
+        letter-spacing: .5px;
+
+        @media only screen and (max-width: 770px){
+            font-size:33px;
+            line-height:40px;
+        }
+
+        @media only screen and (max-width: 480px){
+            font-size:28px;
+            line-height:30px;
+        }
+
+        @include fonts(
+                $size: 44px,
+                $weight: 700,
+                $family: 'Josefin Sans',
+                $lineHeight: 60px,
+                $color: #00788A
+            );
+    }
+
+    &_flexbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 100px 0 0 0;
+        z-index: 2;
+
+        & > div{
+            width: 388px;
+            margin-bottom: 82px;
+        }
+        
+        .branding_card{
+            box-shadow: 0px 60px 80px -14px rgba(0,0,0,0.08);
+        }
+    }
+
+    .card_content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 45px 45px 49px 38px;
+
+        @media only screen and (max-width: 480px){
+            padding: 45px 25px 49px 25px;
+        }
+
+        .image_box{
+            width: 100%;
+            height: 72px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card_image{
+            display: block;
+        }
+
+        .card_title{
+            text-align: center;
+            padding:54px 0 0 0;
+
+            @include fonts(
+                    $size: 30px,
+                    $weight: 600,
+                    $family: 'Josefin Sans',
+                    $lineHeight: null,
+                    $color: #083038
+                );
+
+        }
+
+        .card_description{
+            text-align:center;
+            padding: 30px 0 0 0;
+
+            @include fonts(
+                    $size: 15px,
+                    $weight: 600,
+                    $family: 'Gilroy',
+                    $lineHeight: 28px,
+                    $color: #083038
+                );
+
+        }
+    }
+
+    &_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -33px auto;
+        padding: 23px 38px 25px 38px;
+        border:none;
+        border-radius: 6px;
+        background-image:linear-gradient(90deg, rgba(0,191,196,1) 0%, rgba(0,191,196,1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+
+        @include fonts(
+                $size: 16px,
+                $weight: 600,
+                $family: 'Poppins',
+                $lineHeight: null,
+                $color: #083038
+            );
+    }
+
+}

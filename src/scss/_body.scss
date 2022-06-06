@@ -1,9 +1,10 @@
 .body{
     width: 100%;
-    height: 3000px;
+    height: 9000px;
     position: relative;
     background-color: #ffffff;
 }
 
 @import'./execute';
-@import'./about'
+@import'./about';
+@import'./service';

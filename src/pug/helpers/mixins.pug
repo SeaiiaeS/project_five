@@ -1,0 +1,7 @@
+mixin card (title, description,divIcon,divClass)
+    div(class=divClass)
+        .card_content
+            .image_box 
+                img(src=divIcon).card_image 
+            h3.card_title= title
+            p.card_description!= description

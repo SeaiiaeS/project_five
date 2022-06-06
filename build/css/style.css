@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap");
 
+@import url("//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy");
+
 * {
   margin: 0;
   padding: 0;
@@ -165,7 +167,7 @@ body {
 .body {
   background: #ffffff;
   width: 100%;
-  height: 3000px;
+  height: 9000px;
   position: relative;
 }
 
@@ -504,5 +506,164 @@ body {
 .about_cart_box p {
   font: 500 12px "Poppins";
   padding: 5px 0 0 0;
+  color: #083038;
+}
+
+.service {
+  width: 100%;
+  position: relative;
+  padding: 80px 9.375% 75px 9.375%;
+}
+
+@media only screen and (max-width: 770px) {
+  .service {
+    padding: 80px 10px 25px 10px;
+  }
+}
+
+.service_back {
+  width: 1031px;
+  height: auto;
+  position: absolute;
+  top: 230px;
+  right: 120px;
+  z-index: 1;
+}
+
+.service_subtitle {
+  font: 600 14px "Poppins";
+  text-align: center;
+  color: #00BFC4;
+}
+
+.service_subtitle:after {
+  background: #00BFC4;
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 1px auto;
+}
+
+.service_title {
+  font: 700 44px/60px "Josefin Sans";
+  padding: 15px 0 0 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #00788A;
+}
+
+@media only screen and (max-width: 770px) {
+  .service_title {
+    font-size: 33px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .service_title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+
+.service_flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 100px 0 0 0;
+  z-index: 2;
+}
+
+.service_flexbox > div {
+  width: 388px;
+  margin-bottom: 82px;
+}
+
+.service_flexbox .branding_card {
+  -webkit-box-shadow: 0px 60px 80px -14px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 60px 80px -14px rgba(0, 0, 0, 0.08);
+}
+
+.service .card_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 45px 45px 49px 38px;
+}
+
+@media only screen and (max-width: 480px) {
+  .service .card_content {
+    padding: 45px 25px 49px 25px;
+  }
+}
+
+.service .card_content .image_box {
+  width: 100%;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.service .card_content .card_image {
+  display: block;
+}
+
+.service .card_content .card_title {
+  font: 600 30px "Josefin Sans";
+  text-align: center;
+  padding: 54px 0 0 0;
+  color: #083038;
+}
+
+.service .card_content .card_description {
+  font: 600 15px/28px "Gilroy";
+  text-align: center;
+  padding: 30px 0 0 0;
+  color: #083038;
+}
+
+.service_button {
+  font: 600 16px "Poppins";
+  background: linear-gradient(90deg, rgb(0, 191, 196) 0%, rgb(0, 191, 196) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: -33px auto;
+  padding: 23px 38px 25px 38px;
+  border: none;
+  border-radius: 6px;
   color: #083038;
 }
