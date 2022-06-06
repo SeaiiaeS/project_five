@@ -667,3 +667,153 @@ body {
   border-radius: 6px;
   color: #083038;
 }
+
+.company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 153px 9.375% 175px 8.37%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .company {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 153px 5% 175px 5%;
+  }
+}
+
+.company_back {
+  position: absolute;
+  top: 40px;
+  left: 35px;
+  width: 1145px;
+  height: auto;
+  z-index: 1;
+}
+
+.company_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1200px) {
+  .company_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .company_image {
+    max-width: 100%;
+  }
+}
+
+.company_box {
+  padding: 104px 0 0 118px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .company_box {
+    padding: 104px 0 50px 0;
+  }
+}
+
+.company_subtitle {
+  font: 600 14px "Poppins";
+  letter-spacing: 0.19px;
+  padding: 0 0 14px 0;
+  color: #00BFC4;
+}
+
+@media only screen and (max-width: 480px) {
+  .company_subtitle {
+    font-size: 12px;
+  }
+}
+
+.company_subtitle::after {
+  background: #00BFC4;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  margin: 20px -152px;
+  z-index: 3;
+}
+
+.company_title {
+  font: 700 44px/60px "Josefin Sans";
+  padding: 0 0 20px 0;
+  letter-spacing: 0.5px;
+  color: #00788A;
+}
+
+@media only screen and (max-width: 480px) {
+  .company_title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.company_main_description {
+  font: 600 20px/34px "Poppins";
+  letter-spacing: 0.24px;
+  padding: 0 0 20px 0;
+  color: #083038;
+}
+
+@media only screen and (max-width: 480px) {
+  .company_main_description {
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
+
+.company_description {
+  font: 400 20px/34px "Poppins";
+  letter-spacing: -0.05px;
+  color: #083038;
+}
+
+@media only screen and (max-width: 480px) {
+  .company_description {
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
+
+.company_button {
+  font: 600 14px/24px "Poppins";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+  padding: 55px 0 0 0;
+  text-decoration: none;
+  color: #00788A;
+}
+
+.company_button img {
+  width: 48px;
+}

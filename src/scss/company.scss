@@ -1,0 +1,145 @@
+.company{
+    display: flex;
+    position: relative;
+    padding: 153px percentage(135/1440) 175px 8.37%;
+
+    @media only screen and (max-width: 1200px){
+        justify-content: center;
+        padding: 153px 5% 175px 5%;
+    }
+
+    &_back{
+        position: absolute;
+        top: 40px;
+        left: 35px;
+        width: 1145px;
+        height: auto;
+        z-index: 1;
+    }
+
+    &_container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+
+        @media only screen and (max-width: 1200px){
+            flex-direction: column-reverse;
+        }
+    }
+
+    &_image{
+
+        @media only screen and (max-width: 1200px){
+            max-width: 100%;
+        }
+    }
+
+    &_box{
+        padding: 104px 0 0 118px;
+        @media only screen and (max-width: 1200px){
+            padding: 104px 0 50px 0;
+        }
+    }
+
+    &_subtitle{
+        letter-spacing: .19px;
+        padding: 0 0 14px 0;
+
+        @media only screen and (max-width: 480px){
+            font-size: 12px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            margin: 20px -152px;
+            background-color: #00BFC4;
+            z-index: 3;
+        }
+
+        @include fonts(
+                $size: 14px,
+                $weight: 600,
+                $family: 'Poppins',
+                $lineHeight: null,
+                $color: #00BFC4
+            );
+    }
+
+    &_title{
+        padding: 0 0 20px 0;
+        letter-spacing: .5px;
+
+        @media only screen and (max-width: 480px){
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        @include fonts(
+                $size: 44px,
+                $weight: 700,
+                $family: 'Josefin Sans',
+                $lineHeight: 60px,
+                $color: #00788A
+            );
+    }
+
+    &_main_description{
+        letter-spacing: .24px;
+        padding: 0 0 20px 0;
+
+        @media only screen and (max-width: 480px){
+            font-size: 12px;
+            line-height: 25px;
+        }
+
+        @include fonts(
+                $size: 20px,
+                $weight: 600,
+                $family: 'Poppins',
+                $lineHeight: 34px,
+                $color: #083038
+            );
+    }
+
+    &_description{
+        letter-spacing: -0.05px;
+
+        @media only screen and (max-width: 480px){
+            font-size: 12px;
+            line-height: 25px;
+        }
+
+        @include fonts(
+                $size: 20px,
+                $weight: 400,
+                $family: 'Poppins',
+                $lineHeight: 34px,
+                $color: #083038
+            );
+    }
+
+    &_button{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        padding: 55px 0 0 0;
+        text-decoration: none;
+
+        img{
+            width: 48px;
+        }
+
+        @include fonts(
+                $size: 14px,
+                $weight: 600,
+                $family: 'Poppins',
+                $lineHeight: 24px,
+                $color: #00788A
+            );
+    }
+}
