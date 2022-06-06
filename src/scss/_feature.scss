@@ -1,0 +1,81 @@
+.feature{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 0 0;
+
+
+    &_filter{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: 0 21px 33px -10px rgba(37, 126, 129, 0.16);
+        margin: 0 -86px 0 0;
+
+        @media only screen and (max-width: 1200px){
+            margin: 0 ;
+            flex-direction: column;
+            background-color:#F6FFFF ;
+        }
+
+        .filter_item{
+            background-color: #F6FFFF;
+            padding: 22px 20px;
+        }
+
+        .selected{
+            background-color: #00BFC4;
+            padding: 20px;
+            border-radius: 6px;
+            a{
+                color: #ffffff;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            letter-spacing: 0.05px;
+            @include fonts(
+                $size: 16px,
+                $weight: 500,
+                $family: 'Poppins',
+                $lineHeight: 16px,
+                $color: #083038
+            )
+        }
+    }
+
+    &_gallery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        padding: 95px 0 78px 0;
+
+        @media only screen and (max-width: 1200px){
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+
+    &_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 34px;
+        padding: 23px 38px 25px 38px;
+        border:none;
+        border-radius: 6px;
+        background-image:linear-gradient(90deg, rgba(0,191,196,1) 0%, rgba(0,191,196,1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+
+        @include fonts(
+                $size: 16px,
+                $weight: 600,
+                $family: 'Poppins',
+                $lineHeight: null,
+                $color: #083038
+            );
+    }
+}
