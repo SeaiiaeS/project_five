@@ -11,8 +11,9 @@ global.app = {
 import { clean } from './gulp/tasks/clean.js';
 import { pug } from './gulp/tasks/pug.js';
 import { scss } from './gulp/tasks/scss.js';
-import { server } from './gulp/tasks/server.js';
 import { image } from './gulp/tasks/image.js';
+import { server } from './gulp/tasks/server.js';
+
 
 const watch = () => {
     gulp.watch(path.watch.pug, pug);
