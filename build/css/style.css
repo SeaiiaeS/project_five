@@ -32,23 +32,15 @@ body {
 .header {
   background: #ffffff;
   width: 100%;
-  padding: 52px 133px 19px 133px;
+  padding: 50px 9.2361111111% 20px 9.2361111111%;
 }
 
-@media only screen and (max-width: 1200px) {
-  .header {
-    padding: 52px 33px 19px 33px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .header {
-    padding: 52px 10px 19px 10px;
-  }
+.header__content {
+  padding: 0 0 15px 0;
+  border-bottom: 2px solid #74DCDF;
 }
 
 .navbar {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,21 +50,46 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 0 12px 0;
-  border-bottom: 4px solid #74DCDF;
 }
 
-.navbar #navbar_toggle {
+.navbar__checkbox {
   display: none;
 }
 
-.navbar #navbar_toggle:checked ~ .navbar_panel {
+.navbar__checkbox:checked ~ .navbar__center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.navbar_panel {
+.navbar__logo {
+  width: 80px;
+  height: 24px;
+}
+
+.navbar__center {
+  position: relative;
+  left: 20px;
+}
+
+.navbar__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar__icon {
+  margin: 0 10px 0 22px;
+}
+
+.navbar__toggle {
+  display: none;
+}
+
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,45 +100,22 @@ body {
   -ms-flex-align: center;
   align-items: center;
   list-style: none;
-  margin: 0 -88px 0 0;
+  gap: 40px;
 }
 
-@media only screen and (max-width: 770px) {
-  .navbar_panel {
-    position: absolute;
-    background-color: #ffffff;
-    right: 80px;
-    top: 110px;
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 50%;
-    z-index: 99;
-  }
-}
-
-.navbar_panel a {
+.menu__link {
   font: 500 14px/1.5 "Poppins";
-  padding: 0 39px 0 0;
   text-decoration: none;
   color: #4A5658;
 }
 
-.navbar_panel .selected {
+.menu__link--active {
   font: 600 14px/1.5 "Poppins";
   position: relative;
   color: #083038;
 }
 
-.navbar_panel .selected::after {
+.menu__link--active::after {
   background: #00788A;
   content: "";
   position: absolute;
@@ -129,39 +123,9 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  margin: 14px 20%;
-}
-
-@media only screen and (max-width: 770px) {
-  .navbar_panel .selected::after {
-    width: 100%;
-    height: 5px;
-    border-radius: 0;
-    margin: -2px 0;
-  }
-}
-
-.navbar_icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.navbar_icons label {
-  display: none;
-}
-
-@media only screen and (max-width: 770px) {
-  .navbar_icons label {
-    display: block;
-  }
-}
-
-.navbar_icons svg {
-  margin: 0 10px 0 30px;
+  top: 37px;
+  left: calc(50% - 5px);
+  z-index: 99;
 }
 
 .body {
@@ -178,18 +142,6 @@ body {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 1200px) {
-  .execute {
-    padding: 50px 100px 170px 100px;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .execute {
-    padding: 20px 10px 170px 10px;
-  }
-}
-
 .execute img {
   max-width: 1020px;
   position: absolute;
@@ -199,12 +151,6 @@ body {
   right: 22px;
   bottom: 0;
   z-index: 1;
-}
-
-@media only screen and (max-width: 770px) {
-  .execute img {
-    height: 350px;
-  }
 }
 
 .execute_container {
@@ -241,12 +187,6 @@ body {
   margin: 5px 0 0 30px;
 }
 
-@media only screen and (max-width: 480px) {
-  .execute_business {
-    font-size: 12px;
-  }
-}
-
 .execute_title {
   font: 700 100px/100px "Josefin Sans";
   background: linear-gradient(90deg, #00788A, #74DCDF);
@@ -254,27 +194,6 @@ body {
   color: transparent;
   text-align: center;
   padding: 35px 0 0 0;
-}
-
-@media only screen and (max-width: 1200px) {
-  .execute_title {
-    font-size: 3.8em;
-    line-height: 70px;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .execute_title {
-    font-size: 50px;
-    line-height: 50px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .execute_title {
-    font-size: 30px;
-    line-height: 30px;
-  }
 }
 
 .execute_button {
@@ -289,22 +208,10 @@ body {
   color: #F8F5FF;
 }
 
-@media only screen and (max-width: 770px) {
-  .execute_button {
-    font-size: 0.6em;
-  }
-}
-
 .execute a {
   font: 600 14px "Josefin Sans";
   margin: 31px 0 0 0;
   color: #43808C;
-}
-
-@media only screen and (max-width: 770px) {
-  .execute a {
-    font-size: 0.6em;
-  }
 }
 
 .about {
@@ -312,24 +219,6 @@ body {
   width: 100%;
   position: relative;
   padding: 230px 9.375% 209px 11.1111111111%;
-}
-
-@media only screen and (max-width: 1380px) {
-  .about {
-    padding: 230px 50px 209px 50px;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .about {
-    padding: 230px 10px 209px 10px;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .about {
-    padding: 20px 5px 100px 5px;
-  }
 }
 
 .about .background_frame {
@@ -341,12 +230,6 @@ body {
   right: 95px;
   bottom: 0;
   z-index: 1;
-}
-
-@media only screen and (max-width: 770px) {
-  .about .background_frame {
-    height: 350px;
-  }
 }
 
 .about_container {
@@ -361,38 +244,6 @@ body {
   padding: 15px 17px 0 0;
 }
 
-@media only screen and (max-width: 1200px) {
-  .about_container {
-    padding: 15px 0 0 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .about_container {
-    padding: 15px 0 0 5%;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .about_image {
-    width: 300px;
-    height: 100%;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .about_image {
-    width: 200px;
-  }
-}
-
 .about_box {
   padding: 20px 0 0 0;
 }
@@ -401,12 +252,6 @@ body {
   font: 600 14px "Poppins";
   margin: 0 0 15px 2px;
   color: #00BFC4;
-}
-
-@media only screen and (max-width: 480px) {
-  .about .about_subtitle {
-    font-size: 12px;
-  }
 }
 
 .about .about_subtitle::after {
@@ -424,39 +269,13 @@ body {
   color: #00788A;
 }
 
-@media only screen and (max-width: 770px) {
-  .about .about_title {
-    font-size: 32px;
-    line-height: 30px;
-  }
-}
-
 .about .about_description {
   font: 400 22px/34px "Poppins";
   color: #083038;
 }
 
-@media only screen and (max-width: 770px) {
-  .about .about_description {
-    font-size: 18px;
-    line-height: 25px;
-  }
-}
-
 .about_cart_box {
   padding: 30px 245px 0 0;
-}
-
-@media only screen and (max-width: 770px) {
-  .about_cart_box {
-    padding: 30px 65px 0 0;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .about_cart_box {
-    padding: 30px 20px 0 0;
-  }
 }
 
 .about_cart_box .experiance {
@@ -472,13 +291,6 @@ body {
   gap: 35px;
 }
 
-@media only screen and (max-width: 480px) {
-  .about_cart_box .experiance {
-    padding: 14px 4px 18px 18px;
-    gap: 20px;
-  }
-}
-
 .about_cart_box .support {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,13 +301,6 @@ body {
   padding: 50px 14px 28px 28px;
   border-radius: 40px;
   gap: 27px;
-}
-
-@media only screen and (max-width: 480px) {
-  .about_cart_box .support {
-    padding: 14px 4px 18px 18px;
-    gap: 15px;
-  }
 }
 
 .about_cart_box h4 {
@@ -513,12 +318,6 @@ body {
   width: 100%;
   position: relative;
   padding: 80px 9.375% 75px 9.375%;
-}
-
-@media only screen and (max-width: 770px) {
-  .service {
-    padding: 80px 10px 25px 10px;
-  }
 }
 
 .service_back {
@@ -551,20 +350,6 @@ body {
   text-align: center;
   letter-spacing: 0.5px;
   color: #00788A;
-}
-
-@media only screen and (max-width: 770px) {
-  .service_title {
-    font-size: 33px;
-    line-height: 40px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .service_title {
-    font-size: 28px;
-    line-height: 30px;
-  }
 }
 
 .service_flexbox {
@@ -609,12 +394,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 45px 45px 49px 38px;
-}
-
-@media only screen and (max-width: 480px) {
-  .service .card_content {
-    padding: 45px 25px 49px 25px;
-  }
 }
 
 .service .card_content .image_box {
@@ -676,15 +455,6 @@ body {
   padding: 153px 9.375% 175px 8.37%;
 }
 
-@media only screen and (max-width: 1200px) {
-  .company {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 153px 5% 175px 5%;
-  }
-}
-
 .company_back {
   position: absolute;
   top: 40px;
@@ -708,29 +478,8 @@ body {
   z-index: 2;
 }
 
-@media only screen and (max-width: 1200px) {
-  .company_container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .company_image {
-    max-width: 100%;
-  }
-}
-
 .company_box {
   padding: 104px 0 0 118px;
-}
-
-@media only screen and (max-width: 1200px) {
-  .company_box {
-    padding: 104px 0 50px 0;
-  }
 }
 
 .company_subtitle {
@@ -738,12 +487,6 @@ body {
   letter-spacing: 0.19px;
   padding: 0 0 14px 0;
   color: #00BFC4;
-}
-
-@media only screen and (max-width: 480px) {
-  .company_subtitle {
-    font-size: 12px;
-  }
 }
 
 .company_subtitle::after {
@@ -763,13 +506,6 @@ body {
   color: #00788A;
 }
 
-@media only screen and (max-width: 480px) {
-  .company_title {
-    font-size: 30px;
-    line-height: 30px;
-  }
-}
-
 .company_main_description {
   font: 600 20px/34px "Poppins";
   letter-spacing: 0.24px;
@@ -777,24 +513,10 @@ body {
   color: #083038;
 }
 
-@media only screen and (max-width: 480px) {
-  .company_main_description {
-    font-size: 12px;
-    line-height: 25px;
-  }
-}
-
 .company_description {
   font: 400 20px/34px "Poppins";
   letter-spacing: -0.05px;
   color: #083038;
-}
-
-@media only screen and (max-width: 480px) {
-  .company_description {
-    font-size: 12px;
-    line-height: 25px;
-  }
 }
 
 .company_button {
@@ -851,17 +573,6 @@ body {
   margin: 0 -86px 0 0;
 }
 
-@media only screen and (max-width: 1200px) {
-  .feature_filter {
-    margin: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #F6FFFF;
-  }
-}
-
 .feature_filter .filter_item {
   background: #F6FFFF;
   padding: 22px 20px;
@@ -898,14 +609,6 @@ body {
   padding: 95px 0 78px 0;
 }
 
-@media only screen and (max-width: 1200px) {
-  .feature_gallery {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-}
-
 .feature_button {
   font: 600 16px "Poppins";
   background: linear-gradient(90deg, rgb(0, 191, 196) 0%, rgb(0, 191, 196) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
@@ -923,4 +626,236 @@ body {
   border: none;
   border-radius: 6px;
   color: #083038;
+}
+
+@media only screen and (max-width: 1380px) {
+  .about {
+    padding: 230px 50px 209px 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    padding: 50px 33px 19px 33px;
+  }
+
+  .execute {
+    padding: 50px 100px 170px 100px;
+  }
+
+  .execute_title {
+    font-size: 3.8em;
+    line-height: 70px;
+  }
+
+  .about {
+    padding: 230px 10px 209px 10px;
+  }
+
+  .about_container {
+    padding: 15px 0 0 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .about_image {
+    width: 300px;
+    height: 100%;
+  }
+
+  .company {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 153px 5% 175px 5%;
+  }
+
+  .company_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .company_image {
+    max-width: 100%;
+  }
+
+  .company_box {
+    padding: 104px 0 50px 0;
+  }
+
+  .feature_filter {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #F6FFFF;
+  }
+
+  .feature_gallery {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .navbar__toggle {
+    display: block;
+  }
+
+  .menu__link--active::after {
+    width: 100%;
+    height: 5px;
+    border-radius: 0;
+    left: 0;
+  }
+
+  .menu {
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    top: 110px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .execute {
+    padding: 20px 10px 170px 10px;
+  }
+
+  .execute img {
+    height: 350px;
+  }
+
+  .execute_title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .execute_button {
+    font-size: 0.6em;
+  }
+
+  .execute a {
+    font-size: 0.6em;
+  }
+
+  .about {
+    padding: 20px 5px 100px 5px;
+  }
+
+  .about .background_frame {
+    height: 350px;
+  }
+
+  .about_container {
+    padding: 15px 0 0 5%;
+  }
+
+  .about_image {
+    width: 200px;
+  }
+
+  .about .about_title {
+    font-size: 32px;
+    line-height: 30px;
+  }
+
+  .about .about_description {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .about_cart_box {
+    padding: 30px 65px 0 0;
+  }
+
+  .service {
+    padding: 80px 10px 25px 10px;
+  }
+
+  .service_title {
+    font-size: 33px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    padding: 50px 10px 19px 10px;
+  }
+
+  .execute_business {
+    font-size: 12px;
+  }
+
+  .execute_title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .about .about_subtitle {
+    font-size: 12px;
+  }
+
+  .about_cart_box {
+    padding: 30px 20px 0 0;
+  }
+
+  .about_cart_box .experiance {
+    padding: 14px 4px 18px 18px;
+    gap: 20px;
+  }
+
+  .about_cart_box .support {
+    padding: 14px 4px 18px 18px;
+    gap: 15px;
+  }
+
+  .service_title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .service .card_content {
+    padding: 45px 25px 49px 25px;
+  }
+
+  .company_subtitle {
+    font-size: 12px;
+  }
+
+  .company_title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .company_main_description {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .company_description {
+    font-size: 12px;
+    line-height: 25px;
+  }
 }

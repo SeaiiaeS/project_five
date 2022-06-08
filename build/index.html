@@ -28,33 +28,17 @@
   <body>
     <div class="container">
       <div class="header"> 
-        <nav class="navbar"> 
-          <input type="checkbox" id="navbar_toggle"><a class="navbar_logo" href="#"><img src="./image/company_logo.png" width="80px" height="24px"></a>
-          <ul class="navbar_panel"> 
-            <li> <a class="selected" href="/">HOME</a></li>
-            <li> <a href="/pages">PAGES</a></li>
-            <li> <a href="/portfolio">PORTFOLIO</a></li>
-            <li> <a href="/blog">BLOG</a></li>
-            <li> <a href="/contacts">CONTACTS</a></li>
+        <nav class="header__content navbar">
+          <input class="navbar__checkbox" type="checkbox" id="navbar__checkbox"><a class="navbar__left" href="#"><img class="navbar__logo" src="./image/company_logo.png"></a>
+          <ul class="navbar__center menu"> 
+            <li class="menu__item"> <a class="menu__link menu__link--active" href="/">HOME</a></li>
+            <li class="menu__item"> <a class="menu__link " href="/pages">PAGES</a></li>
+            <li class="menu__item"> <a class="menu__link " href="/portfolio">PORTFOLIO</a></li>
+            <li class="menu__item"> <a class="menu__link " href="/blog">BLOG</a></li>
+            <li class="menu__item"> <a class="menu__link " href="/contacts">CONTACTS</a></li>
           </ul>
-          <div class="navbar_icons">
-            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g opacity="0.4">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0492 1C18.1508 1 23.0983 5.94625 23.0983 12.0492C23.0983 18.1521 18.1508 23.0983 12.0492 23.0983C5.94625 23.0983 1 18.1521 1 12.0492C1 5.94625 5.94625 1 12.0492 1Z" stroke="#00BFC4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.655 22.8269C24.0933 21.2652 22.1937 20.6332 21.4138 21.4131C20.632 22.1949 21.2649 24.0936 22.8266 25.6553C24.3883 27.217 26.2888 27.8518 27.0706 27.07C27.8505 26.2901 27.2167 24.3886 25.655 22.8269Z" fill="#00BFC4"></path>
-              </g>
-            </svg>
-            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.7223 19.8994H1" stroke="#00788A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8242 19.9007C16.8242 22.9759 17.847 24.0001 20.9126 24.0001C23.9782 24.0001 25.001 22.9759 25.001 19.9007C25.001 16.8254 23.9782 15.8013 20.9126 15.8013C17.847 15.8013 16.8242 16.8254 16.8242 19.9007Z" fill="#00788A"></path>
-              <path d="M15.2793 4.10104H25.0003" stroke="#00788A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.17808 4.09939C9.17808 1.02552 8.15531 0 5.08971 0C2.02276 0 1 1.02552 1 4.09939C1 7.17461 2.02276 8.19878 5.08971 8.19878C8.15531 8.19878 9.17808 7.17461 9.17808 4.09939Z" fill="#00788A"></path>
-            </svg>
-            <label for="navbar_toggle"> 
-              <svg class="menu_burger" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.16809 6.79126H21.5743M5.16809 19.2913H21.5743H5.16809ZM5.16809 13.0413H21.5743H5.16809Z" stroke="#00788A" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </label>
+          <div class="navbar__right"><img class="navbar__icon" src="./image/navbar__icon1.svg"><img class="navbar__icon" src="./image/navbar__icon2.svg">
+            <label class="navbar__toggle" for="navbar__checkbox"> <img class="navbar__icon" src="./image/navbar__burgermenu.svg"></label>
           </div>
         </nav>
       </div>
