@@ -217,10 +217,10 @@ body {
   background: #EAFBFF;
   width: 100%;
   position: relative;
-  padding: 230px 9.375% 209px 11.1111111111%;
+  padding: 245px 10.5555555556% 215px 11.1111111111%;
 }
 
-.about .background_frame {
+.about__background {
   max-width: 1140px;
   position: absolute;
   margin: 0 auto;
@@ -231,7 +231,7 @@ body {
   z-index: 1;
 }
 
-.about_container {
+.about__body {
   position: relative;
   z-index: 2;
   display: -webkit-box;
@@ -240,20 +240,24 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 15px 17px 0 0;
 }
 
-.about_box {
+.about__image {
+  max-width: 396px;
+  height: 100%;
+}
+
+.about__content {
   padding: 20px 0 0 0;
 }
 
-.about .about_subtitle {
+.about__subtitle {
   font: 600 14px "Poppins";
   margin: 0 0 15px 2px;
   color: #00BFC4;
 }
 
-.about .about_subtitle::after {
+.about__subtitle::after {
   background: #00BFC4;
   content: "";
   display: block;
@@ -261,23 +265,27 @@ body {
   height: 2px;
 }
 
-.about .about_title {
+.about__title {
   font: 700 44px/60px "Josefin Sans";
   margin: 0 0 24px 0;
   letter-spacing: 0.01em;
   color: #00788A;
 }
 
-.about .about_description {
+.about__description {
   font: 400 22px/34px "Poppins";
   color: #083038;
 }
 
-.about_cart_box {
+.about__row {
   padding: 30px 245px 0 0;
 }
 
-.about_cart_box .experiance {
+.about__card {
+  padding: 24px 14px 28px 28px;
+}
+
+.experiance {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,7 +298,17 @@ body {
   gap: 35px;
 }
 
-.about_cart_box .support {
+.experiance__title {
+  font: 600 20px "Poppins";
+  color: #00788A;
+}
+
+.experiance__description {
+  font: 500 12px "Poppins";
+  color: #083038;
+}
+
+.support {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,14 +320,13 @@ body {
   gap: 27px;
 }
 
-.about_cart_box h4 {
+.support__title {
   font: 600 20px "Poppins";
   color: #00788A;
 }
 
-.about_cart_box p {
+.support__description {
   font: 500 12px "Poppins";
-  padding: 5px 0 0 0;
   color: #083038;
 }
 
@@ -651,8 +668,7 @@ body {
     padding: 230px 10px 209px 10px;
   }
 
-  .about_container {
-    padding: 15px 0 0 100px;
+  .about__body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -660,11 +676,9 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .about_image {
-    width: 300px;
-    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .company {
@@ -759,32 +773,28 @@ body {
   }
 
   .about {
-    padding: 20px 5px 100px 5px;
+    padding: 20px 10px 100px 10px;
   }
 
-  .about .background_frame {
+  .about__background {
     height: 350px;
   }
 
-  .about_container {
-    padding: 15px 0 0 5%;
-  }
-
-  .about_image {
+  .about__image {
     width: 200px;
   }
 
-  .about .about_title {
+  .about__title {
     font-size: 32px;
     line-height: 30px;
   }
 
-  .about .about_description {
+  .about__description {
     font-size: 18px;
     line-height: 25px;
   }
 
-  .about_cart_box {
+  .about__row {
     padding: 30px 65px 0 0;
   }
 
@@ -812,20 +822,20 @@ body {
     line-height: 30px;
   }
 
-  .about .about_subtitle {
+  .about__subtitle {
     font-size: 12px;
   }
 
-  .about_cart_box {
+  .about__row {
     padding: 30px 20px 0 0;
   }
 
-  .about_cart_box .experiance {
+  .experiance {
     padding: 14px 4px 18px 18px;
     gap: 20px;
   }
 
-  .about_cart_box .support {
+  .support {
     padding: 14px 4px 18px 18px;
     gap: 15px;
   }
