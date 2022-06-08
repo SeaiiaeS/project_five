@@ -135,28 +135,24 @@ body {
   position: relative;
 }
 
-.execute {
+.business {
   background: #ffffff;
   width: 100%;
-  padding: 50px 200px 180px 200px;
-  font-size: 18px;
+  padding: 50px 13.8888888889% 210px 13.8888888889%;
 }
 
-.execute img {
+.business__background {
   max-width: 1020px;
   position: absolute;
   margin: 0 auto;
   top: 52px;
-  left: 0;
-  right: 22px;
-  bottom: 0;
   z-index: 1;
 }
 
-.execute_container {
+.business__content {
   width: 100%;
   position: relative;
-  margin: 30px 0 0 0;
+  top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,30 +169,33 @@ body {
   z-index: 2;
 }
 
-.execute_business {
+.business__subtitle {
   font: 500 14px "Poppins";
+  position: relative;
   color: #00BFC4;
 }
 
-.execute_business:after {
+.business__subtitle:after {
   background: #00BFC4;
   content: "";
+  position: absolute;
   display: block;
-  width: 45%;
+  width: 50%;
   height: 2px;
-  margin: 5px 0 0 30px;
+  top: 27px;
+  left: 25%;
 }
 
-.execute_title {
+.business__title {
   font: 700 100px/100px "Josefin Sans";
   background: linear-gradient(90deg, #00788A, #74DCDF);
   -webkit-background-clip: text;
-  color: transparent;
   text-align: center;
-  padding: 35px 0 0 0;
+  padding: 42px 0 0 0;
+  color: transparent;
 }
 
-.execute_button {
+.business__button {
   font: 600 18px "Poppins";
   background: #00BFC4;
   border: none;
@@ -208,7 +207,7 @@ body {
   color: #F8F5FF;
 }
 
-.execute a {
+.business__link {
   font: 600 14px "Josefin Sans";
   margin: 31px 0 0 0;
   color: #43808C;
@@ -639,12 +638,12 @@ body {
     padding: 50px 33px 19px 33px;
   }
 
-  .execute {
+  .business {
     padding: 50px 100px 170px 100px;
   }
 
-  .execute_title {
-    font-size: 3.8em;
+  .business__title {
+    font-size: 70px;
     line-height: 70px;
   }
 
@@ -738,24 +737,24 @@ body {
     z-index: 99;
   }
 
-  .execute {
+  .business {
     padding: 20px 10px 170px 10px;
   }
 
-  .execute img {
+  .business__background {
     height: 350px;
   }
 
-  .execute_title {
+  .business__title {
     font-size: 50px;
     line-height: 50px;
   }
 
-  .execute_button {
+  .business__button {
     font-size: 0.6em;
   }
 
-  .execute a {
+  .business__link {
     font-size: 0.6em;
   }
 
@@ -804,11 +803,11 @@ body {
     padding: 50px 10px 19px 10px;
   }
 
-  .execute_business {
+  .business__subtitle {
     font-size: 12px;
   }
 
-  .execute_title {
+  .business__title {
     font-size: 30px;
     line-height: 30px;
   }
