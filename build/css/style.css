@@ -595,44 +595,15 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 60px 0 0 0;
+  padding: 63px 0 0 0;
 }
 
-.feature_filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.feature__filter {
+  list-style: none;
   -webkit-box-shadow: 0 21px 33px -10px rgba(37, 126, 129, 0.16);
   box-shadow: 0 21px 33px -10px rgba(37, 126, 129, 0.16);
-  margin: 0 -86px 0 0;
-}
-
-.feature_filter .filter_item {
-  background: #F6FFFF;
-  padding: 22px 20px;
-}
-
-.feature_filter .selected {
-  background: #00BFC4;
-  padding: 20px;
-  border-radius: 6px;
-}
-
-.feature_filter .selected a {
-  color: #ffffff;
-}
-
-.feature_filter a {
-  font: 500 16px/16px "Poppins";
-  text-decoration: none;
-  letter-spacing: 0.05px;
-  color: #083038;
+  position: relative;
+  left: 43px;
 }
 
 .feature_gallery {
@@ -646,10 +617,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   gap: 2%;
-  padding: 95px 0 78px 0;
+  padding: 98px 50px 78px 50px;
 }
 
-.feature_button {
+.feature__button {
   font: 600 16px "Poppins";
   background: linear-gradient(90deg, rgb(0, 191, 196) 0%, rgb(0, 191, 196) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
   display: -webkit-box;
@@ -666,6 +637,37 @@ body {
   border: none;
   border-radius: 6px;
   color: #083038;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.filter__item {
+  background: #F6FFFF;
+}
+
+.filter__link {
+  font: 500 16px/16px "Poppins";
+  display: block;
+  text-decoration: none;
+  letter-spacing: 0.05px;
+  padding: 20px;
+  color: #083038;
+}
+
+.filter__link--selected {
+  background: #00BFC4;
+  border-radius: 6px;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 1380px) {
@@ -745,8 +747,8 @@ body {
     padding: 104px 0 50px 0;
   }
 
-  .feature_filter {
-    margin: 0;
+  .feature__filter {
+    left: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
