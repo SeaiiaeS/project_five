@@ -333,10 +333,10 @@ body {
 .service {
   width: 100%;
   position: relative;
-  padding: 80px 9.375% 75px 9.375%;
+  padding: 87px 9.375% 75px 9.375%;
 }
 
-.service_back {
+.service__background {
   width: 1031px;
   height: auto;
   position: absolute;
@@ -345,30 +345,49 @@ body {
   z-index: 1;
 }
 
-.service_subtitle {
+.service__subtitle {
   font: 600 14px "Poppins";
+  position: relative;
   text-align: center;
   color: #00BFC4;
 }
 
-.service_subtitle:after {
+.service__subtitle:after {
   background: #00BFC4;
   content: "";
+  position: absolute;
   display: block;
-  width: 2em;
+  width: 50%;
   height: 1px;
-  margin: 1px auto;
+  top: 20px;
+  left: 25%;
 }
 
-.service_title {
+.service__title {
   font: 700 44px/60px "Josefin Sans";
-  padding: 15px 0 0 0;
+  padding: 15px 0 100px 0;
   text-align: center;
   letter-spacing: 0.5px;
   color: #00788A;
 }
 
-.service_flexbox {
+.service__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.service__flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,21 +400,43 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
-  padding: 100px 0 0 0;
   z-index: 2;
 }
 
-.service_flexbox > div {
-  width: 388px;
-  margin-bottom: 82px;
+.service__card {
+  width: 33.3333333333%;
 }
 
-.service_flexbox .branding_card {
+.service__card--active {
   -webkit-box-shadow: 0px 60px 80px -14px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 60px 80px -14px rgba(0, 0, 0, 0.08);
 }
 
-.service .card_content {
+.service__button {
+  font: 600 16px "Poppins";
+  background: linear-gradient(90deg, rgb(0, 191, 196) 0%, rgb(0, 191, 196) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: -33px auto;
+  padding: 23px 38px 25px 38px;
+  border: none;
+  border-radius: 6px;
+  color: #083038;
+}
+
+.card {
+  min-width: 388px;
+  margin-bottom: 82px;
+}
+
+.card__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,7 +453,7 @@ body {
   padding: 45px 45px 49px 38px;
 }
 
-.service .card_content .image_box {
+.card__icon-box {
   width: 100%;
   height: 72px;
   display: -webkit-box;
@@ -426,40 +467,21 @@ body {
   align-items: center;
 }
 
-.service .card_content .card_image {
+.card__icon {
   display: block;
 }
 
-.service .card_content .card_title {
+.card__title {
   font: 600 30px "Josefin Sans";
   text-align: center;
   padding: 54px 0 0 0;
   color: #083038;
 }
 
-.service .card_content .card_description {
+.card__description {
   font: 600 15px/28px "Gilroy";
   text-align: center;
   padding: 30px 0 0 0;
-  color: #083038;
-}
-
-.service_button {
-  font: 600 16px "Poppins";
-  background: linear-gradient(90deg, rgb(0, 191, 196) 0%, rgb(0, 191, 196) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: -33px auto;
-  padding: 23px 38px 25px 38px;
-  border: none;
-  border-radius: 6px;
   color: #083038;
 }
 
@@ -681,6 +703,24 @@ body {
     align-items: center;
   }
 
+  .service {
+    padding: 80px 50px 25px 50px;
+  }
+
+  .service__flexbox {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .service__card {
+    width: 40%;
+  }
+
   .company {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -798,11 +838,7 @@ body {
     padding: 30px 65px 0 0;
   }
 
-  .service {
-    padding: 80px 10px 25px 10px;
-  }
-
-  .service_title {
+  .service__title {
     font-size: 33px;
     line-height: 40px;
   }
@@ -840,12 +876,12 @@ body {
     gap: 15px;
   }
 
-  .service_title {
+  .service__title {
     font-size: 28px;
     line-height: 30px;
   }
 
-  .service .card_content {
+  .card__content {
     padding: 45px 25px 49px 25px;
   }
 

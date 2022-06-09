@@ -1,7 +1,7 @@
 mixin card (title, description,divIcon,divClass)
-    div(class=divClass)
-        .card_content
-            .image_box 
-                img(src=divIcon).card_image 
-            h3.card_title= title
-            p.card_description!= description
+    div(class=divClass).card
+        .card__content
+            .card__icon-box 
+                img(src=divIcon).card__icon 
+            h3.card__title= title
+            p.card__description!= description
