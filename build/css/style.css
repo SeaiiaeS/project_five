@@ -493,7 +493,7 @@ body {
   padding: 153px 9.375% 175px 8.37%;
 }
 
-.company_back {
+.company__background {
   position: absolute;
   top: 40px;
   left: 35px;
@@ -502,7 +502,7 @@ body {
   z-index: 1;
 }
 
-.company_container {
+.company__content {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,48 +516,50 @@ body {
   z-index: 2;
 }
 
-.company_box {
+.company__box {
   padding: 104px 0 0 118px;
 }
 
-.company_subtitle {
+.company__subtitle {
   font: 600 14px "Poppins";
   letter-spacing: 0.19px;
-  padding: 0 0 14px 0;
+  padding: 0 0 17px 0;
+  position: relative;
   color: #00BFC4;
 }
 
-.company_subtitle::after {
+.company__subtitle::after {
   background: #00BFC4;
   content: "";
   position: absolute;
   width: 50px;
   height: 3px;
-  margin: 20px -152px;
+  top: 22px;
+  left: 0;
   z-index: 3;
 }
 
-.company_title {
+.company__title {
   font: 700 44px/60px "Josefin Sans";
   padding: 0 0 20px 0;
   letter-spacing: 0.5px;
   color: #00788A;
 }
 
-.company_main_description {
+.company__main-description {
   font: 600 20px/34px "Poppins";
   letter-spacing: 0.24px;
   padding: 0 0 20px 0;
   color: #083038;
 }
 
-.company_description {
+.company__description {
   font: 400 20px/34px "Poppins";
   letter-spacing: -0.05px;
   color: #083038;
 }
 
-.company_button {
+.company__button {
   font: 600 14px/24px "Poppins";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,7 +576,7 @@ body {
   color: #00788A;
 }
 
-.company_button img {
+.company__play-icon {
   width: 48px;
 }
 
@@ -728,18 +730,18 @@ body {
     padding: 153px 5% 175px 5%;
   }
 
-  .company_container {
+  .company__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 
-  .company_image {
+  .company__image {
     max-width: 100%;
   }
 
-  .company_box {
+  .company__box {
     padding: 104px 0 50px 0;
   }
 
@@ -885,21 +887,21 @@ body {
     padding: 45px 25px 49px 25px;
   }
 
-  .company_subtitle {
+  .company__subtitle {
     font-size: 12px;
   }
 
-  .company_title {
+  .company__title {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .company_main_description {
+  .company__main-description {
     font-size: 12px;
     line-height: 25px;
   }
 
-  .company_description {
+  .company__description {
     font-size: 12px;
     line-height: 25px;
   }

@@ -8,7 +8,7 @@
         padding: 153px 5% 175px 5%;
     }
 
-    &_back{
+    &__background{
         position: absolute;
         top: 40px;
         left: 35px;
@@ -17,7 +17,7 @@
         z-index: 1;
     }
 
-    &_container{
+    &__content{
         position: relative;
         display: flex;
         justify-content: center;
@@ -29,35 +29,38 @@
         }
     }
 
-    &_image{
+    &__image{
 
         @media only screen and (max-width: 1200px){
             max-width: 100%;
         }
     }
 
-    &_box{
+    &__box{
         padding: 104px 0 0 118px;
         @media only screen and (max-width: 1200px){
             padding: 104px 0 50px 0;
         }
     }
 
-    &_subtitle{
+    &__subtitle{
         letter-spacing: .19px;
-        padding: 0 0 14px 0;
-
-        @media only screen and (max-width: 480px){
-            font-size: 12px;
-        }
+        padding: 0 0 17px 0;
+        position: relative;
+        
         &::after{
             content: '';
             position: absolute;
             width: 50px;
             height: 3px;
-            margin: 20px -152px;
+            top: 22px;
+            left: 0;
             background-color: #00BFC4;
             z-index: 3;
+        }
+
+        @media only screen and (max-width: 480px){
+            font-size: 12px;
         }
 
         @include fonts(
@@ -69,7 +72,7 @@
             );
     }
 
-    &_title{
+    &__title{
         padding: 0 0 20px 0;
         letter-spacing: .5px;
 
@@ -87,7 +90,7 @@
             );
     }
 
-    &_main_description{
+    &__main-description{
         letter-spacing: .24px;
         padding: 0 0 20px 0;
 
@@ -105,7 +108,7 @@
             );
     }
 
-    &_description{
+    &__description{
         letter-spacing: -0.05px;
 
         @media only screen and (max-width: 480px){
@@ -122,17 +125,13 @@
             );
     }
 
-    &_button{
+    &__button{
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 15px;
         padding: 55px 0 0 0;
         text-decoration: none;
-
-        img{
-            width: 48px;
-        }
 
         @include fonts(
                 $size: 14px,
@@ -141,5 +140,9 @@
                 $lineHeight: 24px,
                 $color: #00788A
             );
+    }
+
+    &__play-icon{
+        width: 48px;
     }
 }
