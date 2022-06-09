@@ -12,6 +12,7 @@ export const path = {
         cssFolder:`${buildFolder}/css`,
         imageFolder:`${buildFolder}/image`,
         html:`${buildFolder}/index.html`,
+        fonts:`${buildFolder}/fonts`,
     },
 	src: {
         pug: `${srcFolder}/index.pug`,
@@ -20,6 +21,9 @@ export const path = {
 	watch: {
         html: `${srcFolder}/**/*.html`,
         scss: `${srcFolder}/**/*.scss`,
+    },
+    fonts:{
+        src: `${srcFolder}/fonts/**/*.{ttf,woff,woff2,eot,svg}`,
     },
 	clean: buildFolder,
 	buildFolder: buildFolder,
