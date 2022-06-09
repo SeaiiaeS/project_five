@@ -13,6 +13,7 @@ import { pug } from './gulp/tasks/pug.js';
 import { scss } from './gulp/tasks/scss.js';
 import { image } from './gulp/tasks/image.js';
 import { server } from './gulp/tasks/server.js';
+import { copyFonts } from './gulp/tasks/fonts.js';
 
 
 const watch = () => {
@@ -23,7 +24,7 @@ const watch = () => {
 
 const defaultGulpFunction =gulp.series(
     clean,
-    gulp.series(pug,scss,image),
+    gulp.series(pug,scss,image,copyFonts),
     gulp.parallel(server,watch)
 )
 
