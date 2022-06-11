@@ -12,18 +12,17 @@ export const path = {
         cssFolder:`${buildFolder}/css`,
         imageFolder:`${buildFolder}/image`,
         html:`${buildFolder}/index.html`,
+        fonts:`${buildFolder}/fonts`,
     },
 	src: {
         pug: `${srcFolder}/index.pug`,
         scss: `${srcFolder}/style.scss`,
+        fonts: `${srcFolder}/fonts/**/*.{eot,svg,ttf,woff,woff2}`,
     },
 	watch: {
         pug: `${srcFolder}/**/*.pug`,
         scss: `${srcFolder}/**/*.scss`,
         image: `${imageFolder}`,
-    },
-    fonts:{
-        src: `${srcFolder}/fonts/**/*.{ttf,woff,woff2,eot,svg}`,
     },
 	clean: buildFolder,
 	buildFolder: buildFolder,

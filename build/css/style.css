@@ -2,7 +2,21 @@
 
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap");
 
-@import url("//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy");
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Extrabold.eot");
+  src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"), url("../fonts/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Semibold.eot");
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -595,7 +609,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 63px 0 0 0;
+  padding: 60px 0 0 0;
 }
 
 .feature__filter {
@@ -607,16 +621,18 @@ body {
 }
 
 .feature_gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 2%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 22px;
   padding: 98px 50px 78px 50px;
 }
 
@@ -668,6 +684,103 @@ body {
   background: #00BFC4;
   border-radius: 6px;
   color: #ffffff;
+}
+
+.achievement {
+  width: 100%;
+  padding: 207px 19.0277777778% 117px 15.2777777778%;
+  position: relative;
+}
+
+.achievement__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.achievement__left {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  padding: 0 40px 0 0;
+}
+
+.achievement__title {
+  font: 700 44px/60px "Josefin Sans";
+  padding: 0 0 25px 0;
+  letter-spacing: 0.5px;
+  color: #00788A;
+}
+
+.achievement__description {
+  font: 400 22px/34px "Poppins";
+  letter-spacing: -0.05px;
+  padding: 0 0 75px 0;
+  color: #083038;
+}
+
+.achievement__image {
+  display: block;
+  margin: 122px auto;
+}
+
+.counting {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 0 0 5.3619302949%;
+  gap: 10px;
+}
+
+.counting__item {
+  width: 143px;
+  height: 128px;
+  -webkit-box-shadow: 0 2px 20px -8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 20px -8px rgba(0, 0, 0, 0.14);
+  padding: 30px 5px 0 5px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.counting__item--orange {
+  background: #FFF6EB;
+}
+
+.counting__item--red {
+  background: #FFF7F5;
+}
+
+.counting__item--green {
+  background: #F0FFFA;
+}
+
+.counting__item--blue {
+  background: #ECF4FF;
+}
+
+.counting__number {
+  font: 800 46px/46px "Gilroy";
+  text-align: center;
+  padding: 0 0 11px 0;
+  color: #083038;
+}
+
+.counting__text {
+  font: 600 12px/12px "Gilroy";
+  text-align: center;
+  color: #263D42;
 }
 
 @media only screen and (max-width: 1380px) {
@@ -729,7 +842,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 153px 5% 175px 5%;
+    padding: 153px 5% 100px 5%;
   }
 
   .company__content {
@@ -756,10 +869,15 @@ body {
     background-color: #F6FFFF;
   }
 
-  .feature_gallery {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 10px;
+  .achievement {
+    padding: 204px 8.3333333333% 117px 8.3333333333%;
+  }
+
+  .achievement__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 

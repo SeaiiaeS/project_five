@@ -1,0 +1,112 @@
+.achievement{
+    width: 100%;
+    padding: 207px 274/1440*100% 117px 220/1440*100%;
+    position: relative;
+
+
+    @media only screen and (max-width: 1200px) {
+        padding: 204px 120/1440*100% 117px 120/1440*100%;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
+            
+        
+    }
+
+    &__left{
+        flex: 1 0 auto;
+        padding: 0 40px 0 0;
+    }
+
+    &__title{
+        padding: 0 0 25px 0;
+        letter-spacing: .5px;
+        @include fonts(
+                $size: 44px,
+                $weight: 700,
+                $family: 'Josefin Sans',
+                $lineHeight: 60px,
+                $color: #00788A
+            );
+    }
+
+    &__description{
+        letter-spacing: -.05px;
+        padding: 0 0 75px 0;
+        @include fonts(
+                $size: 22px,
+                $weight: 400,
+                $family: 'Poppins',
+                $lineHeight: 34px,
+                $color: #083038
+            )
+    }
+    &__image{
+        display: block;
+        margin: 122px auto;
+    }
+}
+
+.counting{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0 0 40/746*100%;
+    gap: 10px;
+
+
+    &__item{
+        width: 143px;
+        height: 128px;
+        box-shadow: 0 2px 20px -8px rgba(0,0,0,0.14);
+        padding: 30px 5px 0 5px;
+        flex: 1 1 auto;
+    }
+
+    &__item--orange{
+        background-color: #FFF6EB;
+    }
+
+    &__item--red{
+        background-color: #FFF7F5;
+    }
+
+    &__item--green{
+        background-color: #F0FFFA;
+    }
+
+    &__item--blue{
+        background-color: #ECF4FF;
+    }
+
+    &__number{
+        text-align: center;
+        padding: 0 0 11px 0;
+        @include fonts(
+                $size: 46px,
+                $weight: 800,
+                $family: 'Gilroy',
+                $lineHeight: 46px,
+                $color: #083038
+            );
+    }
+    &__text{
+        text-align: center;
+        @include fonts(
+                $size: 12px,
+                $weight: 600,
+                $family: 'Gilroy',
+                $lineHeight: 12px,
+                $color: #263D42
+            );
+    }
+    
+    
+}

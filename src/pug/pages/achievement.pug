@@ -1,0 +1,16 @@
+.achievement 
+    .achievement__content 
+        .achievement__left 
+            h1.achievement__title Our’s Achievement
+            p.achievement__description
+                | Perferendis repudandae fugia rchitecto <br/>
+                | beatea rederit svitae recusa ndae <br/>
+                | debitifacere.
+            .achievement__list.counting 
+                each val in achievment__list
+                    div(class=`counting__item ${val.color}`)
+                        h3.counting__number= val.number 
+                        p.counting__text= val.text              
+        .achievement__right
+            img(src="./image/achievement_image.jpg", alt="").achievement__image
+            

@@ -20,6 +20,7 @@ const watch = () => {
     gulp.watch(path.watch.pug, pug);
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.image, image);
+    gulp.watch(path.src.fonts, copyFonts);
 }
 
 const defaultGulpFunction =gulp.series(

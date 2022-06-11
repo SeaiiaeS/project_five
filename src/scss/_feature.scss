@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 63px 0 0 0;
+    padding: 60px 0 0 0;
 
 
     &__filter{
@@ -22,16 +22,13 @@
     }
 
     &_gallery{
-        display: flex;
+        display: inline-flex;
         justify-content: center;
         align-items: center;
-        gap: 2%;
+        flex-wrap: wrap;
+        gap: 22px;
         padding: 98px 50px 78px 50px;
 
-        @media only screen and (max-width: 1200px){
-            flex-wrap: wrap;
-            gap: 10px;
-        }
     }
 
     &__button{
