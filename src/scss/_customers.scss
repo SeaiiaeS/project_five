@@ -1,0 +1,103 @@
+.customers{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 38px 135/1440*100% 330px 220/1440*100%;
+
+    @media (max-width: 770px) {
+        padding: 38px 50/1440*100% 330px 50/1440*100%;
+    }
+
+    &__image{
+        width: 100%;
+        max-width: 552px;
+        height:auto;
+    }
+
+    &__content{
+        padding: 60px 0 0 0;
+    }
+
+    &__icon{
+        padding: 0 0 25px 0;
+    }
+
+    &__title{
+        letter-spacing: 0.5px;
+        padding: 0 0 30px 0;
+        @include fonts(
+                $size: 44px,
+                $weight: 700,
+                $family: 'Josefin Sans',
+                $lineHeight: 60px,
+                $color: #00788A
+            );
+    }
+
+    &__more{
+        display: block;
+        padding: 32px 0 0 0;
+        text-decoration: none;
+        @include fonts(
+                $size: 16px,
+                $weight: 800,
+                $family: 'Gilroy',
+                $lineHeight: 16px,
+                $color: #00BFC4
+
+            );
+    }
+
+    &__arrow{
+        margin: 0 0 0 10px ;
+    }
+
+
+}
+.storie{
+
+    &__profile{
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    &__name{
+        letter-spacing: .4px;
+        padding: 3px 0 0 0;
+        @include fonts(
+                $size: 16px,
+                $weight: 700,
+                $family: 'Poppins',
+                $lineHeight: null,
+                $color: #083038
+            );
+    }
+
+    &__job{
+        opacity: 0.5;
+        letter-spacing: .125px;
+        padding: 0 0 3px 0;
+        @include fonts(
+                $size: 14px,
+                $weight: 500,
+                $family: 'Poppins',
+                $lineHeight: null,
+                $color: #083038
+            );
+    }
+
+    &__comment{
+        letter-spacing: 0.4px;
+        font-style: italic;
+        padding: 35px 0 0 0;
+        @include fonts(
+                $size: 20px,
+                $weight: 500,
+                $family: 'Poppins',
+                $lineHeight: 34px,
+                $color: #083038
+            );
+    }
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,500italic,600,700&display=swap");
 
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap");
 
@@ -688,7 +688,7 @@ body {
 
 .achievement {
   width: 100%;
-  padding: 207px 19.0277777778% 115px 15.2777777778%;
+  padding: 202px 19.0277777778% 115px 15.2777777778%;
   position: relative;
 }
 
@@ -788,7 +788,7 @@ body {
   width: 100%;
   position: relative;
   z-index: 0;
-  padding: 100px 9.375% 115px 9.375%;
+  padding: 105px 9.375% 115px 9.375%;
 }
 
 .team__background {
@@ -933,7 +933,7 @@ body {
 .honorable__button {
   font: 600 16px "Poppins";
   background: #00BFC4;
-  margin: 52px auto;
+  margin: 54px auto;
   display: block;
   padding: 23px 30px 23px 30px;
   border: none;
@@ -941,6 +941,84 @@ body {
   -webkit-box-shadow: 0 26px 30px -16px rgba(0, 191, 196, 0.1882352941);
   box-shadow: 0 26px 30px -16px rgba(0, 191, 196, 0.1882352941);
   color: #FEFEFF;
+}
+
+.customers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 38px 9.375% 330px 15.2777777778%;
+}
+
+.customers__image {
+  width: 100%;
+  max-width: 552px;
+  height: auto;
+}
+
+.customers__content {
+  padding: 60px 0 0 0;
+}
+
+.customers__icon {
+  padding: 0 0 25px 0;
+}
+
+.customers__title {
+  font: 700 44px/60px "Josefin Sans";
+  letter-spacing: 0.5px;
+  padding: 0 0 30px 0;
+  color: #00788A;
+}
+
+.customers__more {
+  font: 800 16px/16px "Gilroy";
+  display: block;
+  padding: 32px 0 0 0;
+  text-decoration: none;
+  color: #00BFC4;
+}
+
+.customers__arrow {
+  margin: 0 0 0 10px;
+}
+
+.storie__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.storie__name {
+  font: 700 16px "Poppins";
+  letter-spacing: 0.4px;
+  padding: 3px 0 0 0;
+  color: #083038;
+}
+
+.storie__job {
+  font: 500 14px "Poppins";
+  opacity: 0.5;
+  letter-spacing: 0.125px;
+  padding: 0 0 3px 0;
+  color: #083038;
+}
+
+.storie__comment {
+  font: italic 500 20px/34px "Poppins";
+  letter-spacing: 0.4px;
+  padding: 35px 0 0 0;
+  color: #083038;
 }
 
 @media only screen and (max-width: 1380px) {
@@ -1123,6 +1201,12 @@ body {
   .service__title {
     font-size: 33px;
     line-height: 40px;
+  }
+}
+
+@media (max-width: 770px) {
+  .customers {
+    padding: 38px 3.4722222222% 330px 3.4722222222%;
   }
 }
 
