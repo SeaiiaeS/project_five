@@ -1,0 +1,55 @@
+.honorable{
+    width: 100%;
+    padding: 111px 135/1440*100% 101px 135/1440*100%;
+
+    &__title{
+        letter-spacing: 0.5px;
+        padding: 40px 0 62px 84px;
+
+        @media only screen and (max-width: 480px){
+            padding: 40px 0 62px 0px;
+        }
+
+        @include fonts(
+            $size: 44px,
+            $weight: 700,
+            $family: 'Josefin Sans',
+            $lineHeight: 60px,
+            $color: #00788A
+        )   
+    }
+
+    &__flexbox{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 124px 17px 124px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-shadow: 0px 29px 62px -22px #354D8C18;
+        border-radius: 20px;
+        gap: 20px;
+    }
+
+    &__sponsors{
+        max-width: 168px;
+    }
+
+    &__button{
+        margin: 52px auto;
+        display: block;
+        padding: 23px 30px 23px 30px;
+        border: none;
+        background-color: #00BFC4;
+        border-radius: 6px;
+        box-shadow: 0 26px 30px -16px #00BFC430;
+        @include fonts(
+            $size: 16px,
+            $weight: 600,
+            $family: 'Poppins',
+            $lineHeight: null,
+            $color: #FEFEFF
+        )   
+    }
+}

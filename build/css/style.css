@@ -788,7 +788,7 @@ body {
   width: 100%;
   position: relative;
   z-index: 0;
-  padding: 105px 9.375% 115px 9.375%;
+  padding: 100px 9.375% 115px 9.375%;
 }
 
 .team__background {
@@ -891,6 +891,56 @@ body {
 
 .team__pointer--active {
   background: #00788A;
+}
+
+.honorable {
+  width: 100%;
+  padding: 111px 9.375% 101px 9.375%;
+}
+
+.honorable__title {
+  font: 700 44px/60px "Josefin Sans";
+  letter-spacing: 0.5px;
+  padding: 40px 0 62px 84px;
+  color: #00788A;
+}
+
+.honorable__flexbox {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 124px 17px 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 0px 29px 62px -22px rgba(53, 77, 140, 0.0941176471);
+  box-shadow: 0px 29px 62px -22px rgba(53, 77, 140, 0.0941176471);
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.honorable__sponsors {
+  max-width: 168px;
+}
+
+.honorable__button {
+  font: 600 16px "Poppins";
+  background: #00BFC4;
+  margin: 52px auto;
+  display: block;
+  padding: 23px 30px 23px 30px;
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 26px 30px -16px rgba(0, 191, 196, 0.1882352941);
+  box-shadow: 0 26px 30px -16px rgba(0, 191, 196, 0.1882352941);
+  color: #FEFEFF;
 }
 
 @media only screen and (max-width: 1380px) {
@@ -1134,5 +1184,9 @@ body {
   .company__description {
     font-size: 12px;
     line-height: 25px;
+  }
+
+  .honorable__title {
+    padding: 40px 0 62px 0px;
   }
 }
