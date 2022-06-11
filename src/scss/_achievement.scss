@@ -1,11 +1,11 @@
 .achievement{
     width: 100%;
-    padding: 207px 274/1440*100% 117px 220/1440*100%;
+    padding: 207px 274/1440*100% 115px 220/1440*100%;
     position: relative;
 
 
     @media only screen and (max-width: 1200px) {
-        padding: 204px 120/1440*100% 117px 120/1440*100%;
+        padding: 204px 120/1440*100% 100px 120/1440*100%;
     }
 
     &__content{
@@ -49,7 +49,7 @@
     }
     &__image{
         display: block;
-        margin: 122px auto;
+        margin: 122px auto 0;
     }
 }
 
