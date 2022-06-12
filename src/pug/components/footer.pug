@@ -1,0 +1,27 @@
+.footer 
+    .footer__subscribe.newsletter 
+        h3.newsletter__title 
+            | Subscribe Newsletter
+        p.newsletter__description
+            | We operate our banking services in many  <br/>
+            | countries around the world.
+        .newsletter__form 
+            input(type='text', placeholder='Enter your email.').newsletter__input 
+            button(type='submit').newsletter__button 
+                | Get Started
+    .footer__content 
+        .footer__left
+            img(src="./image/company_logo.png").footer__logo
+            .footer__media 
+                img(src="./image/Facebook.png", alt="", srcset="")
+                img(src="./image/Twitter.png", alt="", srcset="")
+                img(src="./image/Linkedin.png", alt="", srcset="")
+        .footer__right
+            ul.footer__menu 
+                each val in footer
+                    li.footer__mainitem= val.title
+                        ul.footer__list
+                            each item in val.list
+                                li.footer__miniitem= item  
+    p.footer__copyright
+        | © Copyright 2021 Bee Creative Agency All Rights Reserved.
