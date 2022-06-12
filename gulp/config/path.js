@@ -24,6 +24,9 @@ export const path = {
         scss: `${srcFolder}/**/*.scss`,
         image: `${imageFolder}`,
     },
+    fonts:{
+        src: `${srcFolder}/fonts/**/*.{ttf,woff,woff2,eot,svg}`,
+    },
 	clean: buildFolder,
 	buildFolder: buildFolder,
     imageFolder:imageFolder,

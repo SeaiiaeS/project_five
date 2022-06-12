@@ -15,7 +15,6 @@ import { image } from './gulp/tasks/image.js';
 import { server } from './gulp/tasks/server.js';
 import { copyFonts } from './gulp/tasks/fonts.js';
 
-
 const watch = () => {
     gulp.watch(path.watch.pug, pug);
     gulp.watch(path.watch.scss, scss);
