@@ -1,23 +1,30 @@
 .customers{
     position: relative;
     width: 100%;
+    position: relative;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 38px 135/1440*100% 330px 220/1440*100%;
 
-    @media (max-width: 770px) {
-        padding: 38px 50/1440*100% 330px 50/1440*100%;
+    @media only screen and (max-width: 1200px) {
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 770px) {
+        padding: 38px 80/1440*100% 330px 80/1440*100%;
+        justify-content: center;
     }
 
     &__image{
         width: 100%;
         max-width: 552px;
         height:auto;
+        max-height: 675px;
     }
 
     &__content{
         padding: 60px 0 0 0;
+        word-break: break-word;
     }
 
     &__icon{
@@ -58,8 +65,8 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 0;
-        margin: 0 auto 322px;
+        bottom: 262px;
+        margin: 30px auto 30px ;
         width: 70px;
         display: flex;
         justify-content: space-between;
