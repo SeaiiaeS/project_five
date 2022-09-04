@@ -27,5 +27,10 @@ const defaultGulpFunction =gulp.series(
     gulp.series(pug,scss,image,copyFonts),
     gulp.parallel(server,watch)
 )
+const buildf =gulp.series(
+    clean,
+    gulp.series(pug,scss,image,copyFonts),
+)
 
 gulp.task('default',defaultGulpFunction)
+gulp.task('build',buildf)
